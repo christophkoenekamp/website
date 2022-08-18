@@ -3,10 +3,6 @@ import React from 'react';
 import './App.css';
 import Terminal from './components/Terminal';
 
-const glow = (text: string) => {
-	return <span className="terminal-glow">{text}</span>;
-};
-
 const getYear = () => {
 	return new Date().getFullYear();
 };

@@ -1,9 +1,5 @@
 import React from 'react';
 
-const glow = (text: string) => {
-	return <span className="terminal-glow">{text}</span>;
-};
-
 type ErrorMessageProps = {
 	command: string;
 };
