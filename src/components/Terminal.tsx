@@ -1,5 +1,6 @@
 import { logEvent } from 'firebase/analytics';
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import { analytics } from '../firebase';
 import Banner from './BannerMessage';
 import ErrorMessage from './ErrorMessage';
@@ -109,16 +110,44 @@ const Terminal = (props: TerminalProps) => {
 		socials: (
 			<>
 				<dl>
-					<dt>Twitter</dt>
+				<dt>Twitter -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/koenekampc"
+              >
+                twitter/koenekampc
+              </a></dt>
 				</dl>
 				<dl>
-					<dt>Instagram</dt>
+					<dt>Instagram -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/christophkoenekamp"
+              >
+                instagram/christophkoenekamp
+              </a></dt>
 				</dl>
 				<dl>
-					<dt>Facebook</dt>
+					<dt>Facebook -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/christoph.konekamp.1"
+              >
+                facebook/christoph.koenekamp.1
+              </a></dt>
 				</dl>
 				<dl>
-					<dt>LinkedIn</dt>
+					<dt>LinkedIn -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/christophkoenekamp"
+              >
+                linkedin/christophkoenekamp
+              </a></dt>
 				</dl>
 			</>
 		),
