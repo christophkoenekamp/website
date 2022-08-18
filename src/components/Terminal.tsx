@@ -45,16 +45,7 @@ const Terminal = (props: TerminalProps) => {
 
 	useEffect(scrollLastCommandTop, [output]);
 
-	const echoCommands = [
-		'help',
-		'about',
-		'projects',
-		'contact',
-		'awards',
-		'repo',
-		'skills',
-		'website',
-	] as const;
+	const echoCommands = ['help', 'about', 'projects', 'contact', 'awards', 'repo', 'skills', 'website'] as const;
 	type EchoCommand = typeof echoCommands[number];
 	const utilityCommands = ['clear', 'all', 'cv'] as const;
 	type UtilityCommand = typeof utilityCommands[number];
@@ -81,10 +72,8 @@ const Terminal = (props: TerminalProps) => {
 		help: (
 			<div>
 				<p>
-					Wow, I thought the only people who would visit this site would be bots
-					and spammers, guess I was wrong. Just type any of the commands below
-					to get some more info. You can even type a few letters and press [tab]
-					or '.' to autocomplete.
+					Wow, I thought the only people who would visit this site would be bots and spammers, guess I was wrong. Just type any of the commands below
+					to get some more info. You can even type a few letters and press [tab] or '.' to autocomplete.
 				</p>
 				<dl>
 					<dt>about</dt>
@@ -113,72 +102,49 @@ const Terminal = (props: TerminalProps) => {
 		about: (
 			<div>
 				<p>
-					Hey there! Thanks for taking such a keen interest in me. Hopefully
-					you're not gonna spam or stalk me... Okay, I guess if you must stalk
-					me, just give me fair warning so I can look presentable when you
-					arrive at my door.
+					Hey there! Thanks for taking such a keen interest in me. Hopefully you're not gonna spam or stalk me... Okay, I guess if you must stalk me,
+					just give me fair warning so I can look presentable when you arrive at my door.
 				</p>
 				<p>
-					Right, so, where to begin? Well, my parents met in... Nah, just
-					kidding.
+					Right, so, where to begin? Well, my parents met in... Nah, just kidding.
 					<br />
-					As you probably know, my name is {glow('Craig Feldman')}. I'm a{' '}
-					{getAge(new Date(1992, 12, 23))} year old {glow('Computer Scientist')}{' '}
-					born and bred in the beautiful South Africa and currently living in
-					Cape Town.
+					As you probably know, my name is {glow('Craig Feldman')}. I'm a {getAge(new Date(1992, 12, 23))} year old {glow('Computer Scientist')} born
+					and bred in the beautiful South Africa and currently living in Cape Town.
 				</p>
 				<p>
-					I graduated with distinction from the University of Cape Town with a
-					Bachelor of Business Science degree in Computer Science. It comprised
-					of four years of computer science courses, as well as many business
-					courses (for example, I completed three years of economics, stats, and
+					I graduated with distinction from the University of Cape Town with a Bachelor of Business Science degree in Computer Science. It comprised
+					of four years of computer science courses, as well as many business courses (for example, I completed three years of economics, stats, and
 					finance).
 				</p>
 				<p>
-					I also have an MSc degree in Computer Science from the University of
-					Oxford, where I was awarded a full academic scholarship. Studying
-					abroad was an amazing experience - highlights include early morning
-					rowing, croquet, formal dinners, and just exploring Oxford with
-					amazing people and friends.
+					I also have an MSc degree in Computer Science from the University of Oxford, where I was awarded a full academic scholarship. Studying
+					abroad was an amazing experience - highlights include early morning rowing, croquet, formal dinners, and just exploring Oxford with amazing
+					people and friends.
 				</p>
 				<p>
-					Some of my interests include: machine learning, the blockchain and
-					cryptography, and leveraging these tools to help solve problems,
-					particularly in the {glow('fintech')} space. I'm also pretty into fly
-					fishing!
+					Some of my interests include: machine learning, the blockchain and cryptography, and leveraging these tools to help solve problems,
+					particularly in the {glow('fintech')} space. I'm also pretty into fly fishing!
 				</p>
 				<p>
 					My previous formal work experience includes:
 					<ul>
 						<li>
 							working on asset management software at{' '}
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://www.fundamental.net"
-							>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.fundamental.net">
 								Fundamental Software
 							</a>
 							;
 						</li>
 						<li>
 							working for a great content creation app called{' '}
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://madewithover.com"
-							>
+							<a target="_blank" rel="noopener noreferrer" href="https://madewithover.com">
 								Over
 							</a>
 							;
 						</li>
 						<li>
 							helping people to buy, store, and learn about cryptocurrency at{' '}
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://luno.com"
-							>
+							<a target="_blank" rel="noopener noreferrer" href="https://luno.com">
 								Luno
 							</a>
 							.
@@ -186,22 +152,15 @@ const Terminal = (props: TerminalProps) => {
 					</ul>
 				</p>
 				<p>
-					Nowadays I'm developing a method to download food... I wish! I am
-					currently working at{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://stitch.money"
-					>
+					Nowadays I'm developing a method to download food... I wish! I am currently working at{' '}
+					<a target="_blank" rel="noopener noreferrer" href="https://stitch.money">
 						Stitch
 					</a>
 					, developing a single API for payments and financial data in Africa.
 				</p>
 				<p>
-					Please feel free to get in touch with me to discuss any cool
-					opportunities. My contact details can be found by typing 'contact',
-					and if you would like to check out my {glow('CV')}, simply type 'cv'
-					or click{' '}
+					Please feel free to get in touch with me to discuss any cool opportunities. My contact details can be found by typing 'contact', and if you
+					would like to check out my {glow('CV')}, simply type 'cv' or click{' '}
 					<a href="CV.pdf" download="Craig Feldman - Curriculum Vitae.pdf">
 						here
 					</a>
@@ -212,28 +171,21 @@ const Terminal = (props: TerminalProps) => {
 		projects: (
 			<>
 				<p>
-					I'm always working on comp sciey (not really a word) things. Why don't
-					you check out a few of my public code repositories? Just type 'repo'
+					I'm always working on comp sciey (not really a word) things. Why don't you check out a few of my public code repositories? Just type 'repo'
 					to get the links.
 				</p>
 				<p>
 					I've also dabbled in producing a{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://weaverworks.co.za"
-					>
+					<a target="_blank" rel="noopener noreferrer" href="https://weaverworks.co.za">
 						property-management portal
 					</a>{' '}
-					that provides property managers and buildings with some really cool
-					software and tools. The project uses TypeScript, Node.js, React (with
+					that provides property managers and buildings with some really cool software and tools. The project uses TypeScript, Node.js, React (with
 					Material-UI components) and Firebase.
 				</p>
 				<p>
 					You can also check out my MSc thesis{' '}
 					<a href="MSc_Thesis.pdf" download="Craig Feldman - MSc Thesis.pdf">
-						An investigation into the applicability of a blockchain based voting
-						system
+						An investigation into the applicability of a blockchain based voting system
 					</a>{' '}
 					- this one took a while!
 				</p>
@@ -296,22 +248,13 @@ const Terminal = (props: TerminalProps) => {
 			<>
 				<ul>
 					<li>
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://github.com/craig-feldman"
-						>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/craig-feldman">
 							GitHub
 						</a>{' '}
-						- Unfortunately, I could only make a small subset of my projects
-						public.
+						- Unfortunately, I could only make a small subset of my projects public.
 					</li>
 					<li>
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://bitbucket.org/fldcra001"
-						>
+						<a target="_blank" rel="noopener noreferrer" href="https://bitbucket.org/fldcra001">
 							Bitbucket
 						</a>{' '}
 						- A few university projects.
@@ -325,54 +268,35 @@ const Terminal = (props: TerminalProps) => {
 				<dl>
 					<dt>TypeScript</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>
-							#############
-						</span>{' '}
-						##
+						## <span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>#############</span> ##
 					</dd>
 					<dt>Go</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>
-							############
-						</span>
+						## <span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>############</span>
 						{'  '}
 						##
 					</dd>
 					<dt>Kotlin</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#42D100', textShadow: '0 0 5px #42D100' }}>
-							###########
-						</span>
+						## <span style={{ color: '#42D100', textShadow: '0 0 5px #42D100' }}>###########</span>
 						{'   '}
 						##
 					</dd>
 					<dt>Java</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#42D100', textShadow: '0 0 5px #42D100' }}>
-							###########
-						</span>
+						## <span style={{ color: '#42D100', textShadow: '0 0 5px #42D100' }}>###########</span>
 						{'   '}
 						##
 					</dd>
 					<dt>C# and C++</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#99D100', textShadow: '0 0 5px #99D100' }}>
-							########
-						</span>
+						## <span style={{ color: '#99D100', textShadow: '0 0 5px #99D100' }}>########</span>
 						{'      '}
 						##
 					</dd>
 					<dt>Python</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#D16200', textShadow: '0 0 5px #D16200' }}>
-							#####
-						</span>
+						## <span style={{ color: '#D16200', textShadow: '0 0 5px #D16200' }}>#####</span>
 						{'         '}
 						##
 					</dd>
@@ -382,42 +306,28 @@ const Terminal = (props: TerminalProps) => {
 				<dl>
 					<dt>GCP / Firebase</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>
-							#########
-						</span>
+						## <span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>#########</span>
 						{'     '}
 						##
 					</dd>
 					<dt>Azure</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>
-							#########
-						</span>
+						## <span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>#########</span>
 						{'     '}
 						##
 					</dd>
 					<dt>AWS</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#99D100', textShadow: '0 0 5px #99D100' }}>
-							########
-						</span>
+						## <span style={{ color: '#99D100', textShadow: '0 0 5px #99D100' }}>########</span>
 						{'      '}
 						##
 					</dd>
 					<dt>
 						Infrastructure <br />
-						<span style={{ fontSize: 'smaller' }}>
-							(Docker, Kubernetes, DBs, etc.)
-						</span>
+						<span style={{ fontSize: 'smaller' }}>(Docker, Kubernetes, DBs, etc.)</span>
 					</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>
-							#########
-						</span>
+						## <span style={{ color: '#99D100', textShadow: '0 0 5px 99D100' }}>#########</span>
 						{'     '}
 						##
 					</dd>
@@ -427,28 +337,19 @@ const Terminal = (props: TerminalProps) => {
 				<dl>
 					<dt>React</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>
-							############
-						</span>
+						## <span style={{ color: '#00DE12', textShadow: '0 0 5px #00DE12' }}>############</span>
 						{'  '}
 						##
 					</dd>
 					<dt>Angular</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#D16200', textShadow: '0 0 5px #D16200' }}>
-							#####
-						</span>
+						## <span style={{ color: '#D16200', textShadow: '0 0 5px #D16200' }}>#####</span>
 						{'         '}
 						##
 					</dd>
 					<dt>General web development</dt>
 					<dd>
-						##{' '}
-						<span style={{ color: '#5BD100', textShadow: '0 0 5px 5BD100' }}>
-							#########
-						</span>
+						## <span style={{ color: '#5BD100', textShadow: '0 0 5px 5BD100' }}>#########</span>
 						{'     '}
 						##
 					</dd>
@@ -458,44 +359,26 @@ const Terminal = (props: TerminalProps) => {
 		website: (
 			<>
 				<p>
-					I built this website from scratch using {glow('React')} and{' '}
-					{glow('TypeScript')}. It is a rewrite of my{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://github.com/craig-feldman/personal-website"
-					>
+					I built this website from scratch using {glow('React')} and {glow('TypeScript')}. It is a rewrite of my{' '}
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/craig-feldman/personal-website">
 						previous
 					</a>{' '}
 					website that used{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://terminal.jcubic.pl/"
-					>
+					<a target="_blank" rel="noopener noreferrer" href="https://terminal.jcubic.pl/">
 						JQuery Terminal Plugin
 					</a>{' '}
 					(and some inspiration from{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="http://www.ronniepyne.com"
-					>
+					<a target="_blank" rel="noopener noreferrer" href="http://www.ronniepyne.com">
 						Ronnie Pyne
 					</a>
 					).
 				</p>
 				<p>
 					The source code for this site can be found on{' '}
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://github.com/craig-feldman/personal-website-react"
-					>
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/craig-feldman/personal-website-react">
 						GitHub
 					</a>
-					. Feel free to use this website for inspiration, or go ahead and copy
-					some of the code! If you do, all I ask is that you give this site a
+					. Feel free to use this website for inspiration, or go ahead and copy some of the code! If you do, all I ask is that you give this site a
 					mention :)
 				</p>
 			</>
@@ -508,12 +391,8 @@ const Terminal = (props: TerminalProps) => {
 		// Store a record of this command with a ref to allow us to scroll it into view.
 		// Note: We use a ref callback here because setting the ref directly, then clearing output seems to set the ref to null.
 		const commandRecord = (
-			<div
-				ref={(el) => (scrollRef.current = el)}
-				className="terminal-command-record"
-			>
-				<span className="terminal-prompt">{terminalPrompt}</span>{' '}
-				<span>{input}</span>
+			<div ref={(el) => (scrollRef.current = el)} className="terminal-command-record">
+				<span className="terminal-prompt">{terminalPrompt}</span> <span>{input}</span>
 			</div>
 		);
 
@@ -534,11 +413,7 @@ const Terminal = (props: TerminalProps) => {
 				</div>,
 			]);
 		} else if (isEchoCommand(inputCommand)) {
-			setOutput([
-				...output,
-				commandRecord,
-				<div className="terminal-command-output">{commands[inputCommand]}</div>,
-			]);
+			setOutput([...output, commandRecord, <div className="terminal-command-output">{commands[inputCommand]}</div>]);
 		} else if (isUtilityCommand(inputCommand)) {
 			switch (inputCommand) {
 				case 'clear': {
@@ -547,20 +422,10 @@ const Terminal = (props: TerminalProps) => {
 				}
 				case 'all': {
 					// Output all commands in a custom order.
-					const allCommandsOutput = [
-						'about',
-						'awards',
-						'skills',
-						'projects',
-						'repo',
-						'contact',
-						'website',
-					].map((command) => (
+					const allCommandsOutput = ['about', 'awards', 'skills', 'projects', 'repo', 'contact', 'website'].map((command) => (
 						<>
 							<div className="terminal-heading">{command}</div>
-							<div className="terminal-command-output">
-								{commands[command as EchoCommand]}
-							</div>
+							<div className="terminal-command-output">{commands[command as EchoCommand]}</div>
 						</>
 					));
 
@@ -581,8 +446,7 @@ const Terminal = (props: TerminalProps) => {
 		if (direction === 'up') {
 			updatedIndex = historyIndex === 0 ? 0 : historyIndex - 1;
 		} else {
-			updatedIndex =
-				historyIndex === history.length ? history.length : historyIndex + 1;
+			updatedIndex = historyIndex === history.length ? history.length : historyIndex + 1;
 		}
 		setHistoryIndex(updatedIndex);
 		return updatedIndex === history.length ? '' : history[updatedIndex];
@@ -594,12 +458,8 @@ const Terminal = (props: TerminalProps) => {
 			return matchingCommands[0];
 		} else {
 			const commandRecord = (
-				<div
-					ref={(el) => (scrollRef.current = el)}
-					className="terminal-command-record"
-				>
-					<span className="terminal-prompt">{terminalPrompt}</span>{' '}
-					<span>{input}</span>
+				<div ref={(el) => (scrollRef.current = el)} className="terminal-command-record">
+					<span className="terminal-prompt">{terminalPrompt}</span> <span>{input}</span>
 				</div>
 			);
 			setOutput([...output, commandRecord, matchingCommands.join('    ')]);
@@ -619,9 +479,7 @@ const Terminal = (props: TerminalProps) => {
 		<div className="terminal-container" tabIndex={-1} onKeyDown={focusOnInput}>
 			<div className="terminal-content">
 				{banner && <Banner banner={banner} inputRef={inputRef} />}
-				{welcomeMessage && (
-					<WelcomeMessage message={welcomeMessage} inputRef={inputRef} />
-				)}
+				{welcomeMessage && <WelcomeMessage message={welcomeMessage} inputRef={inputRef} />}
 				<TerminalOutput outputs={output} />
 				<InputArea
 					setOutput={setOutput}

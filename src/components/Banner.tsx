@@ -1,10 +1,8 @@
-import React from "react";
+import React from 'react';
 
 type BannerProps = {
-  banner: string;
+	banner: string;
 };
-const Banner = (props: BannerProps) => (
-  <div className="terminal-banner">{props.banner}</div>
-);
+const Banner = (props: BannerProps) => <div className="terminal-banner">{props.banner}</div>;
 
 export default Banner;

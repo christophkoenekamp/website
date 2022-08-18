@@ -15,10 +15,7 @@ const Banner = (props: BannerProps) => {
 			if (!bannerMessageRef.current) {
 				return;
 			}
-			bannerMessageRef.current.insertAdjacentText(
-				'beforeend',
-				props.banner[index++]
-			);
+			bannerMessageRef.current.insertAdjacentText('beforeend', props.banner[index++]);
 			if (index === props.banner.length) {
 				clearInterval(typeText);
 				if (props.inputRef.current) {
@@ -26,7 +23,7 @@ const Banner = (props: BannerProps) => {
 					props.inputRef.current.focus();
 				}
 			}
-		}, 5);
+		}, 2);
 	}, [props.inputRef, props.banner]);
 	return <div ref={bannerMessageRef} className="terminal-banner"></div>;
 };

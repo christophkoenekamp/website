@@ -15,10 +15,7 @@ const WelcomeMessage = (props: WelcomeMessageProps) => {
 			if (!welcomeMessageRef.current) {
 				return;
 			}
-			welcomeMessageRef.current.insertAdjacentText(
-				'beforeend',
-				props.message[index++]
-			);
+			welcomeMessageRef.current.insertAdjacentText('beforeend', props.message[index++]);
 			if (index === props.message.length) {
 				clearInterval(typeText);
 				if (props.inputRef.current) {
@@ -28,9 +25,7 @@ const WelcomeMessage = (props: WelcomeMessageProps) => {
 			}
 		}, 30);
 	}, [props.inputRef, props.message]);
-	return (
-		<div ref={welcomeMessageRef} className="terminal-welcome-message"></div>
-	);
+	return <div ref={welcomeMessageRef} className="terminal-welcome-message"></div>;
 };
 
 export default WelcomeMessage;
