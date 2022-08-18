@@ -115,7 +115,7 @@ const Terminal = (props: TerminalProps) => {
                 rel="noopener noreferrer"
                 href="https://twitter.com/koenekampc"
               >
-                twitter/koenekampc
+                /koenekampc
               </a></dt>
 				</dl>
 				<dl>
@@ -125,7 +125,7 @@ const Terminal = (props: TerminalProps) => {
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/christophkoenekamp"
               >
-                instagram/christophkoenekamp
+                /christophkoenekamp
               </a></dt>
 				</dl>
 				<dl>
@@ -135,7 +135,7 @@ const Terminal = (props: TerminalProps) => {
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/christoph.konekamp.1"
               >
-                facebook/christoph.koenekamp.1
+                /christoph.koenekamp.1
               </a></dt>
 				</dl>
 				<dl>
@@ -145,7 +145,17 @@ const Terminal = (props: TerminalProps) => {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/christophkoenekamp"
               >
-                linkedin/christophkoenekamp
+                /christophkoenekamp
+              </a></dt>
+				</dl>
+				<dl>
+					<dt>Discord -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.discordapp.com/users/christophkoenekamp#8941"
+              >
+                /christophkoenekamp#8941
               </a></dt>
 				</dl>
 			</>

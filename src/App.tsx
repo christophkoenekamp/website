@@ -11,7 +11,7 @@ const getYear = () => {
 	return new Date().getFullYear();
 };
 
-const welcomeMessage = `Type ${glow('help')} to view a list of available commands.
+const welcomeMessage = `Type 'help' to view a list of available commands.
 `;
 
 const bannerCondensed =
