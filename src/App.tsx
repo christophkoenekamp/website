@@ -26,7 +26,7 @@ const bannerCondensed =
 	'                                                               $$                                                                                                            $$ \n' +
 	'                                                               $$                                                                                                            $$ \n' +
 	'                                                               $$                                                                                                            $$ \n' +
-	"ChristophKoenekamp (CK) Not A Corporation. All rights reserved. @"+ getYear();
+	"Not A Corporation. All rights reserved. @"+ getYear();
 
 const prompt = 'visitor@christophkoenekamp.com:~$';
 

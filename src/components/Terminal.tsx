@@ -82,22 +82,25 @@ const Terminal = (props: TerminalProps) => {
 		projects: (
 			<>
 				<dl>
-					<dt>Nerve Global</dt>
+					<dt>Nerve Global -{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="nerveglobal.com"
+              >
+                nerveglobal.com
+              </a></dt>
 					<dd>
-					<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="nerveglobal.com"
-						>
-							nerveglobal.com
-						</a>
+						<text>
+						A blockchain infrastructure that facilitates p2p transactions and crowdfunding.
+						</text>
 					</dd>
 				</dl>
 				<dl>
 					<dt>**********</dt>
 					<dd>
 						<text>
-						Cross-Chain DEX with more than $5 million in TVL
+						Cross-Chain DEX with more than $5 million in TVL.
 						</text>
 					</dd>
 				</dl>
