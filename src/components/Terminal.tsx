@@ -1,6 +1,5 @@
 import { logEvent } from 'firebase/analytics';
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import { analytics } from '../firebase';
 import Banner from './BannerMessage';
 import ErrorMessage from './ErrorMessage';
