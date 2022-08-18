@@ -23,7 +23,7 @@ const Banner = (props: BannerProps) => {
 					props.inputRef.current.focus();
 				}
 			}
-		}, 2);
+		}, 0.1);
 	}, [props.inputRef, props.banner]);
 	return <div ref={bannerMessageRef} className="terminal-banner"></div>;
 };

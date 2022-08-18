@@ -47,8 +47,8 @@
 }
 
 .terminal-command-output dt {
-	color: #eeeeee;
-	text-shadow: 0 0 4px #eeeeee;
+	color: aqua;
+	text-shadow: 0 0 4px aqua;
 }
 
 .terminal-command-output dd {
@@ -79,6 +79,8 @@
 
 .terminal-prompt {
 	margin-right: 5px;
+	color:aquamarine;
+	text-shadow: 0 0 4px aquamarine;
 }
 
 .terminal-heading::before {
@@ -91,6 +93,7 @@
 	font-size: inherit;
 	font-size: inherit;
 	color: #ff00ff;
+	text-shadow: 0 0 4px #ff00ff;
 	background: transparent;
 	border: 0px;
 	outline: none; /* no highlight on focus */
@@ -107,15 +110,20 @@
 }
 
 .terminal-glow {
-	color: #eeeeee;
-	text-shadow: 0 0 4px #eeeeee;
+	color: aqua;
+	text-shadow: 0 0 4px aqua;
+}
+
+.terminal-glow2 {
+	color: #ff4400;
+	text-shadow: 0 0 4px #ff4400;
 }
 
 a {
-	color: #dea5f5;
+	color: #ff4400;
+	text-shadow: 0 0 4px #ff4400;
 }
 a:hover {
-	color: black;
-	background-color: #c4a5f5;
-	text-decoration: none;
+	color: white;
+	background-color: #ff4400;
 }
