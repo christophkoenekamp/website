@@ -7,16 +7,6 @@ import InputArea from './InputArea';
 import TerminalOutput from './TerminalOutput';
 import WelcomeMessage from './WelcomeMessage';
 
-// Just a little helper function so I don't have to continually update my age
-const getAge = (birthDate: Date) => {
-	var today = new Date();
-	var age = today.getFullYear() - birthDate.getFullYear();
-	var m = today.getMonth() - birthDate.getMonth();
-	if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-		age--;
-	}
-	return age;
-};
 
 const downloadFile = (uri: string, downloadName: string) => {
 	const link = document.createElement('a');
@@ -64,14 +54,6 @@ const Terminal = (props: TerminalProps) => {
 		return isEchoCommand(arg) || isUtilityCommand(arg);
 	}
 
-	const glow = (text: string) => {
-		return <span className="terminal-glow">{text}</span>;
-	};
-
-	const glow2 = (text: string) => {
-		return <span className="terminal-glow2">{text}</span>;
-	};
-
 	const commands: { [key in EchoCommand]: JSX.Element } = {
 		help: (
 			<div>
@@ -114,9 +96,9 @@ const Terminal = (props: TerminalProps) => {
 				<dl>
 					<dt>**********</dt>
 					<dd>
-						<a>
+						<text>
 						Cross-Chain DEX with more than $5 million in TVL
-						</a>
+						</text>
 					</dd>
 				</dl>
 			</>
