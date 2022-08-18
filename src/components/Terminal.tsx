@@ -86,7 +86,7 @@ const Terminal = (props: TerminalProps) => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="nerveglobal.com"
+                href="https://www.nerveglobal.com"
               >
                 nerveglobal.com
               </a></dt>
